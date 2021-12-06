@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppointmentController">
+   <children>
+      <TextField fx:id="apptIDField" disable="true" layoutX="155.0" layoutY="47.0" prefHeight="25.0" prefWidth="244.0" promptText="Auto-generated" />
+      <TextField fx:id="titleField" layoutX="155.0" layoutY="83.0" prefHeight="25.0" prefWidth="244.0" />
+      <TextField fx:id="descriptionField" layoutX="155.0" layoutY="117.0" prefHeight="25.0" prefWidth="244.0" />
+      <TextField fx:id="locationField" layoutX="155.0" layoutY="150.0" prefHeight="25.0" prefWidth="244.0" />
+      <Text layoutX="39.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Appointment ID" />
+      <Text layoutX="39.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Time" wrappingWidth="113.173828125" />
+      <Button fx:id="saveBtn" layoutX="166.0" layoutY="462.0" mnemonicParsing="false" onAction="#onSaveBtn" text="Save" />
+      <Button fx:id="cancelBtn" layoutX="237.0" layoutY="462.0" mnemonicParsing="false" onAction="#onReturn" text="Cancel" />
+      <Label fx:id="titleLabel" layoutX="22.0" layoutY="6.0" prefHeight="32.0" prefWidth="377.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Text layoutX="39.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Time" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer ID" wrappingWidth="113.173828125" />
+      <Text layoutX="39.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" wrappingWidth="113.173828125" />
+      <TextField fx:id="custIDField" layoutX="155.0" layoutY="385.0" prefHeight="25.0" prefWidth="244.0" />
+      <TextField fx:id="userIDField" layoutX="155.0" layoutY="420.0" prefHeight="25.0" prefWidth="244.0" />
+      <ComboBox fx:id="contactField" layoutX="155.0" layoutY="186.0" prefHeight="25.0" prefWidth="244.0" />
+      <TextField fx:id="typeField" layoutX="155.0" layoutY="218.0" prefHeight="25.0" prefWidth="244.0" />
+      <ComboBox fx:id="startDate1" layoutX="154.0" layoutY="252.0" prefHeight="25.0" prefWidth="79.0" promptText="Month" />
+      <ComboBox fx:id="startDate2" layoutX="237.0" layoutY="252.0" prefHeight="25.0" prefWidth="79.0" promptText="Day" />
+      <ComboBox fx:id="startDate3" layoutX="320.0" layoutY="252.0" prefHeight="25.0" prefWidth="79.0" promptText="Year" />
+      <ComboBox fx:id="startTime1" layoutX="155.0" layoutY="285.0" prefHeight="25.0" prefWidth="79.0" promptText="Hour" />
+      <ComboBox fx:id="startTime2" layoutX="238.0" layoutY="285.0" prefHeight="25.0" prefWidth="79.0" promptText="Min" />
+      <ComboBox fx:id="endDate1" layoutX="154.0" layoutY="319.0" prefHeight="25.0" prefWidth="79.0" promptText="Month" />
+      <ComboBox fx:id="endDate2" layoutX="237.0" layoutY="319.0" prefHeight="25.0" prefWidth="79.0" promptText="Day" />
+      <ComboBox fx:id="endDate3" layoutX="320.0" layoutY="319.0" prefHeight="25.0" prefWidth="79.0" promptText="Year" />
+      <ComboBox fx:id="endTime1" layoutX="155.0" layoutY="353.0" prefHeight="25.0" prefWidth="79.0" promptText="Hour" />
+      <ComboBox fx:id="endTime2" layoutX="238.0" layoutY="353.0" prefHeight="25.0" prefWidth="79.0" promptText="Min" />
+   </children>
+</AnchorPane>

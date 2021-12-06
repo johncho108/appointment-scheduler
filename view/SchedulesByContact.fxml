@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SchedulesByContactController">
+   <children>
+      <TableView fx:id="apptTable" layoutX="320.0" layoutY="70.0" prefHeight="506.0" prefWidth="644.0">
+         <columns>
+            <TableColumn fx:id="apptIDCol" prefWidth="46.0" text="ApptID" />
+            <TableColumn fx:id="titleCol" minWidth="8.0" prefWidth="91.0" text="Title" />
+            <TableColumn fx:id="descriptionCol" prefWidth="143.0" text="Description" />
+            <TableColumn fx:id="typeCol" prefWidth="97.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="110.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="110.0" text="End " />
+            <TableColumn fx:id="apptCustIDCol" prefWidth="46.0" text="CustID" />
+         </columns>
+      </TableView>
+      <Text layoutX="37.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedules By Contact">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="contactField" layoutX="40.0" layoutY="80.0" prefWidth="150.0" promptText="Contact" />
+      <Button fx:id="submitBtn" layoutX="40.0" layoutY="141.0" mnemonicParsing="false" onAction="#onSubmitBtn" text="Submit" />
+      <Button fx:id="returnBtn" layoutX="118.0" layoutY="141.0" mnemonicParsing="false" onAction="#onReturn" text="Back" />
+   </children>
+</AnchorPane>
